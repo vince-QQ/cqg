@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>t</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	.nav-bar{
+      width: 100%;
+      height: 88px;
+      position: relative;
+      background-color: black;
+      z-index: 5;
+    }
+    a{
+    	text-decoration: none;
+    	color:#ccc; 
+    }
+    .left-logo{
+      width: 140px;
+      height: 68px;
+      position: absolute;
+      top: 10px;
+      left: 120px;
+
+
+    }
+    .logo-image{
+      display:block; 
+      width: 140px;
+      height: 68px;
+      background: url(http://game.gtimg.cn/images/pubg/act/a20171114feature/logo.png);
+
+    }
+    .nav-center{
+      width: 800px;
+      height: 88px;
+      position: absolute;
+      left: 350px;
+      top: 35px;
+    }
+    
+    .nav-center ul li{
+      list-style: none;
+      float: left;
+      margin-right: 30px;
+      color: #ccc;
+      font-weight: bold;
+      font-size: 14px;
+
+      
+    }  
+    .right-button{
+      width: 142px;
+      height: 40px;
+      background-color: #e69800;
+      line-height: 40px;
+      font-size: 14px;
+      position: absolute;
+      right: 10px;
+      top: 19px;
+      color: white;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+
+    }
+		body{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.video-box{
+			width: 100%;
+			transform: translate(0,0);
+			transition: all 1s;	
+		}
+		video{
+			width: 100%;
+			height: 740px;
+		    display: block;
+		    object-fit: fill;
+		}
+		
+		.first-video,.second-video,.third-video{
+			position: relative;
+			width: 100%;
+		}
+		.sprite{
+			background:url(sprite.png);
+		}
+		.first{
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			margin-left: 47%;
+			left: -40px;
+			top: 150px;	
+
+		}
+		.two{
+			position: absolute;
+            width: 250px;
+            height: 140px;
+            margin-left: 40%;
+            left: -40px;
+            top: 310px;
+            background-position: -795px -431px;
+            transform: scale(2);
+		}
+		.second{
+			position: absolute;
+            width: 549px;
+            height: 205px;
+            margin-left: 50%;
+            left: -274px;
+            bottom: 250px;
+            background-position: -244px -216px;
+            transform: scale(0.7);
+		}
+		.b{
+			position: absolute;
+            width: 530px;
+            height: 20px;
+            left: 500px;
+            bottom: 260px;
+            color: white;
+            transform: translate3d(0.312px, -0.36462px, 0px);
+             transform-style: preserve-3d; 
+             backface-visibility: hidden;
+             display: block;
+		}
+        .third{
+        	position: absolute;
+            width: 530px;
+            height: 216px;
+            margin-left: 50%;
+            left: -274px;
+            bottom: 280px;
+            background-position: -788px -216px;
+            transform: scale(0.7);
+        }
+
+        .c{
+        	position: absolute;
+            width: 530px;
+            height: 20px;
+            left: 530px;
+            bottom: 285px;
+            color: white;
+            transform: translate3d(0.312px, -0.36462px, 0px);
+             transform-style: preserve-3d; 
+             backface-visibility: hidden;
+             display: block;
+
+        }
+        .left-nav ul li{
+        	display: block;
+        	list-style: none；
+        	
+
+        }
+
+
+        .left-nav{
+        	background: url(http://game.gtimg.cn/images/pubg/act/a20171114feature/bg_nav.png) no-repeat;
+        	
+        	position: absolute;
+            width: 100px;
+            height: 900px;
+            left: 10px;
+            top: 88px;
+        }
+        .lia,.lib,.lic{
+        	color: white;
+        	position: absolute;
+        	width: 50px;
+        	height: 20px;
+        }
+        .lia{
+        	color: orange;
+        	top: 50px;
+        	left: 25px;
+        }
+        .lib{
+        	top: 258px;
+        	left: 25px;
+        }
+        .lic{
+        	top: 460px;
+        	left: 25px;
+        }
+        .nav-center ul li a:hover{
+        	color: orange;
+        }
+
+	</style>
+	
+</head>
+<body>
+	<div class="nav-bar">
+    <div class="left-logo"><a class="logo-image"></a></div>
+    <div class="nav-center">
+      <ul>
+        <li><a href="">官网首页</a></li>
+        <li><a href="">绑定查询</a></li>
+        <li><a href="">国服预约</a></li>
+        <li><a href="">老兵绑定</a></li>
+        <li><a href="">游戏特色</a></li>
+        <li><a href="">游戏APP</a></li>
+        <li><a href="">网吧认证</a></li> 
+      </ul>
+    </div>
+    <div><a class="right-button">进入官网</a></div>
+  </div>
+	<div class="video-box">
+		<div class="first-video">
+			<video src="http://videooc.tc.qq.com/vcloud1022.tc.qq.com/1022_5dad5415ceb249339a0bf9662bfd414e.f0.mp4?vkey=0EA4FC22863EFAA365AEA3412C91A09AA0222E49833D0BFB2917D8E38F6F0089C48C85396FCC98A821BFC00FB1108CBF75DA6A9472EAE3758F6E889E8036B7ABCA3063883A23560EA9CB294E7CB4F018EA319FB314C05EED&sha=0" autoplay loop></video>
+            <p class="first sprite"></p>
+            <p class="two sprite"></p>
+		</div>
+		<div class="second-video">
+			<video src="http://videooc.tc.qq.com/vcloud1022.tc.qq.com/1022_e48ffd8a30074766bfae4ba50cbbbce5.f0.mp4?vkey=57ACC28E2FACE0864123AF5316E4A8802693D9D9C0222CDAD1B4AC3379242F46153212E9D5FBA764AD19DB69593B79639738AA0C57041116577E21890A6A7F83F2C29FD0356437202E656A28AD2E62C090D176A25E0A4365&sha=0" loop></video>
+			<p class="second sprite"></p>
+			<span class="b">连呼吸都必须小心翼翼，前所未有的紧张刺激体验</span>
+		</div>
+		<div class="third-video">
+			<video src="http://videooc.tc.qq.com/vcloud1022.tc.qq.com/1022_18cc6cba2ebb4635aa06d2020134d1be.f0.mp4?vkey=C5265B3C8951C4837A83EA9A336FFB9E7646BF4E9A61C1F9F4245AA406732659E86BA852926C262B67D3D999DC7D78CE2B509FC205AB2651A865536CBAD40EE7A431738C09252B24716F3B1A608265A3B31E81486BF1DC8E&sha=0" loop></video>
+			<p class="third sprite"></p>
+			<span class="c" data-depth="0.2">真实的射击体验，多种枪械与配件，眼观六路耳听八方</span>
+		</div>
+	</div>
+	<div class="left-nav">
+		<ul>
+			<li class="lia" onclick="demo(0)">第一个</li>
+			<li class="lib" onclick="demo(1)">第二个</li>
+			<li class="lic" onclick="demo(2)">第三个</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+		var index=0;
+		var videos = document.querySelectorAll('.video-box div');
+		var direction="";
+		var li=document.querySelectorAll('.left-nav li');
+		console.log(videos);
+		var scroll = false;
+        function fengzhuang(direction){
+        	videos[index].querySelector('video').pause();
+
+        	if (direction=='up') {
+        		--index;
+             	if(index<0)
+             	{
+             		index=0;
+             	}
+        	}
+        	else if (direction=='down') {
+        		++index;
+             	if(index>2)
+             	{
+             		index=2;
+             	}
+        	}
+            var y = (-750)*index;  
+            document.querySelector('.video-box').style.transform = 'translate(0,'+y+'px)';
+            videos[index].querySelector('video').play();
+            li[index].style.color="orange";
+            for (var i = 0; i <li.length; i++) {
+            	if(i!=index)
+            	{
+            		li[i].style.color="white";
+            	}
+            }
+            scroll=false;
+        }
+
+        function scrollChange(event){
+        	console.log(window.event);
+        	var e = event||window.event;
+            var num = e.detail == 0 ? e.wheelDelta : -e.detail; 
+
+             if(num<0)
+             {
+             	direction="down";
+             }
+             else if(num>0)
+             {
+             	direction="up";
+             }
+             if(!scroll){
+
+               setTimeout(function(){
+               	fengzhuang(direction)
+               },200);
+               scroll=true;
+             }
+             
+       
+        }
+
+        function keyChange(event){
+             
+             if(event.key=='ArrowDown')
+             {
+             	 direction="down";
+             }
+             else if(event.key=='ArrowUp')
+             {
+             	direction="up";
+             }
+             fengzhuang(direction);
+            
+		}
+
+        window.addEventListener("keyup",keyChange,true);
+
+
+        if (document.addEventListener) { 
+   	  	document.addEventListener('DOMMouseScroll',scrollChange,false)
+   	  }
+   	  // 360浏览器
+	  document.onmousewheel = scrollChange;
+
+
+
+
+	  function demo(num){
+
+            var y = (-750)*num;
+            
+            document.querySelector('.video-box').style.transform = 'translate(0,'+y+'px)';
+            videos[num].querySelector('video').play();
+            li[num].style.color="orange";
+            for (var i = 0; i <li.length; i++) {
+            	if(i!=num)
+            	{
+            		li[i].style.color="white";
+            	}
+            }
+
+	  }
+
+		
+	</script> 
+</html>
